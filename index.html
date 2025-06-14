@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trade with Mukesh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://media.istockphoto.com/id/1315193317/vector/stock-market-candlestick-chart-vector-background.jpg?s=612x612&w=0&k=20&c=SexH-fDr_9Y9UAhJJ75QP2h_yFRWIpkJO5k26bNNZYs=') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.82);
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111827;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 38px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #3b82f6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    .reels {
+      padding: 40px 15px 20px;
+      text-align: center;
+    }
+
+    .reels h2 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #3b82f6;
+    }
+
+    .reel-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .reel-grid iframe {
+      border-radius: 10px;
+      width: 100%;
+      height: 330px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 600px) {
+      .navbar {
+        justify-content: space-between;
+      }
+
+      .menu {
+        font-size: 1rem;
+        gap: 25px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+
+      .reels h2 {
+        font-size: 1.8rem;
+      }
+
+      .reel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      .reel-grid iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <!-- 🔥 Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://sdmntprcentralus.oaiusercontent.com/files/00000000-11d0-61f5-9e50-2b8f5e7afe28/raw?se=2025-06-14T02%3A48%3A44Z&sp=r&sv=2024-08-04&sr=b&scid=b09c666c-9399-5f1d-bbb6-5843301afa74&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-13T22%3A42%3A34Z&ske=2025-06-14T22%3A42%3A34Z&sks=b&skv=2024-08-04&sig=G5EvQMLABApUBVD4FvogvhxnpZFf9t7I5H%2BTObcydr0%3D" alt="Mukesh Logo" />
+      </div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#reels">Reels</a>
+        <a href="#course">Course</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+
+    <!-- 🔥 Hero -->
+    <div class="hero" id="home">
+      <h1>Trade with Mukesh</h1>
+      <p>Your Mentor in the World of Trading</p>
+      <button class="btn">Join Premium Group</button>
+    </div>
+
+    <!-- 🔥 Reels -->
+    <section class="reels" id="reels">
+      <h2>🔥 Latest Reels</h2>
+      <div class="reel-grid">
+        <iframe src="https://www.instagram.com/reel/DK1tURARMPH/embed" allowfullscreen></iframe>
+        <iframe src="https://www.instagram.com/reel/DKuyUNLug5m/embed" allowfullscreen></iframe>
+        <iframe src="https://www.instagram.com/reel/DKxd-WjTlsw/embed" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 🔥 Course -->
+    <section class="reels" id="course">
+      <h2>📘 Course</h2>
+      <p>Coming Soon – Learning from Mukesh Bhai.</p>
+    </section>
+
+    <!-- 🔥 About -->
+    <section class="reels" id="about">
+      <h2>🙋‍♂️ About Mukesh Bhai</h2>
+      <p>A trusted trader and mentor, guiding thousands with technical analysis & trading psychology.</p>
+    </section>
+
+    <!-- 🔥 Footer -->
+    <footer>
+      © 2025 Trade with Mukesh | Designed with ❤️ by Manish
+    </footer>
+
+  </div>
+
+</body>
+</html>
